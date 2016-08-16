@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     actioncable (5.0.0.1)
       actionpack (= 5.0.0.1)
@@ -39,12 +40,17 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.1)
+    autoprefixer-rails (6.3.6)
+      execjs
     better_errors (2.1.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.2)
     byebug (9.0.5)
     coderay (1.1.1)
@@ -105,6 +111,9 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 5.0.0.1)
       sprockets-rails (>= 2.0.0)
+    rails-assets-bootstrap-datepicker (1.6.4)
+      rails-assets-jquery (>= 1.7.1)
+    rails-assets-jquery (3.1.0)
     rails-dom-testing (2.0.1)
       activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6.0)
@@ -127,6 +136,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    simple_form (3.2.1)
+      actionpack (> 4, < 5.1)
+      activemodel (> 4, < 5.1)
     spring (1.7.2)
     spring-watcher-listen (2.0.0)
       listen (>= 2.7, < 4.0)
@@ -164,6 +176,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  bootstrap-sass (~> 3.3.6)
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
@@ -171,7 +184,9 @@ DEPENDENCIES
   listen (~> 3.0.5)
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
+  rails-assets-bootstrap-datepicker!
   sass-rails (~> 5.0)
+  simple_form
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3

@@ -1,0 +1,17 @@
+<h1 class="text-center">Lost Kitties</h1>
+
+
+<div class="container">
+  <div class="row">
+    <% @animals.each do |animal| %>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <h2><%= animal.name %></h2>
+      <p><%= animal.category %></p>
+      <p><%= animal.found_at %></p>
+      <%= link_to "Check it", animal_path(animal), class: "btn btn-primary" %>
+      <%= link_to "Edit it", edit_animal_path(animal), class: "btn btn-primary" %>
+      <%= link_to "Kill it", animal_path(animal), method: :delete, class: "btn btn-primary" %>
+    </div>
+    <% end %>
+  </div>
+</div>
